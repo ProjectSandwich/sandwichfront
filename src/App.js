@@ -3,6 +3,8 @@ import './App.css';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton'
 import { withAuth0 } from '@auth0/auth0-react'
+import { Link } from 'react-router-dom';
+import {NavItem } from 'react-bootstrap';
 
 class App extends React.Component {
   render() {
@@ -20,6 +22,7 @@ class App extends React.Component {
           )
           : <LoginButton />
         }
+        <NavItem><Link to="/mapPage" className="nav-link">Map Page</Link></NavItem>
       </div>
     );
   }
