@@ -5,6 +5,7 @@ import './App.css';
 import Login from './components/Login';
 import LogoutButton from './components/LogoutButton'
 import { withAuth0 } from '@auth0/auth0-react'
+import { Switch, Route } from 'react-router-dom';
 import MapPage from './components/mapPage';
 import Profile from './components/Profile';
 
