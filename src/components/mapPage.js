@@ -1,9 +1,11 @@
 import React from 'react';
 // import GoogleMapReact from 'google-map-react';
-import Map from './components/map'
+import Map from './map';
 
-export default class mapPage extends React.Component {
-  return() {
-    <Map/>
+export default class MapPage extends React.Component {
+  render() {
+    return (
+      <Map />
+    )
   }
-}
+};

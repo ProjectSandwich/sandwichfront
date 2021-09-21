@@ -3,8 +3,9 @@ import './App.css';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton'
 import { withAuth0 } from '@auth0/auth0-react'
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import {NavItem } from 'react-bootstrap';
+import MapPage from './components/mapPage';
 
 class App extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class App extends React.Component {
     console.log('auth0 in App', auth0);
 
     return (
-      <div className="App">
+      <>
         {auth0.isAuthenticated
           ? (
             <>
@@ -22,8 +23,22 @@ class App extends React.Component {
           )
           : <LoginButton />
         }
-        <NavItem><Link to="/mapPage" className="nav-link">Map Page</Link></NavItem>
-      </div>
+        <NavItem><Link to="/map" className="nav-link">Map Page</Link></NavItem>
+        <Switch>
+          <Route exact path="/">
+            Home
+          </Route>
+          <Route path="/map">
+            <MapPage />
+          </Route>
+          <Route path="/aboutus">
+          About Us
+          </Route>
+          <Route path="/profile">
+            Profile
+          </Route>
+        </Switch>
+      </>
     );
   }
 }
