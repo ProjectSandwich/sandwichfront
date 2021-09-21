@@ -12,7 +12,12 @@ class App extends React.Component {
     return (
       <div className="App">
         {auth0.isAuthenticated
-          ? <>Welcome back, {auth0.user.nickname}</>
+          ? (
+            <>
+              Welcome back, {auth0.user.name}
+              <LogoutButton />
+            </>
+          )
           : <LoginButton />
         }
       </div>

@@ -18,7 +18,7 @@ ReactDOM.render(
       clientId="ZdMKiTqqH1DBIAANHYsrqDIfiKUJ4GuU"
       redirectUri={window.location.origin}>
       <App />
-    </Auth0Provider>,
+    </Auth0Provider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
