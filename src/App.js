@@ -6,6 +6,7 @@ import { withAuth0 } from '@auth0/auth0-react'
 import { Link, Switch, Route } from 'react-router-dom';
 import {NavItem } from 'react-bootstrap';
 import MapPage from './components/mapPage';
+import Profile from './components/Profile';
 
 class App extends React.Component {
   render() {
@@ -35,7 +36,7 @@ class App extends React.Component {
           About Us
           </Route>
           <Route path="/profile">
-            Profile
+            <Profile />
           </Route>
         </Switch>
       </>
