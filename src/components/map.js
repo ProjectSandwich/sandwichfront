@@ -25,7 +25,7 @@ export default class Map extends React.Component {
           <AnyReactComponent
             lat={42.0667}
             lng={-93.4}
-            text="My Marker"
+            text="Default Marker"
           />
         </GoogleMapReact>
       </div>
