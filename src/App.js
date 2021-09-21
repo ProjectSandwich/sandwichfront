@@ -27,13 +27,13 @@ class App extends React.Component {
         <NavItem><Link to="/map" className="nav-link">Map Page</Link></NavItem>
         <Switch>
           <Route exact path="/">
-            Home
+            Home 
           </Route>
           <Route path="/map">
             <MapPage />
           </Route>
           <Route path="/aboutus">
-          About Us
+          About Us Component
           </Route>
           <Route path="/profile">
             <Profile />
