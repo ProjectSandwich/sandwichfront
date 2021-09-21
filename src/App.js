@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+>>>>>>> cf761e027e77ca58c0de2539f621f16147696229
 import './App.css';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton'
