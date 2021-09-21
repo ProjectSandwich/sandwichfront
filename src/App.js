@@ -1,3 +1,5 @@
+//  import logo from './logo.svg';
+import Header from './Header'
 import React from 'react';
 import './App.css';
 import LoginButton from './LoginButton';
@@ -15,6 +17,7 @@ class App extends React.Component {
 
     return (
       <>
+      <Header/>
         {auth0.isAuthenticated
           ? (
             <>
