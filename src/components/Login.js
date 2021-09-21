@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginButton from './LoginButton';
-import { Card } from 'react-bootstrap';
+import { Card, Image } from 'react-bootstrap';
+import logo from '../images/sandwich.png'
 
 class Login extends React.Component {
   render() {
@@ -8,6 +9,7 @@ class Login extends React.Component {
       <Card className="text-center" style={{ width: '18rem' }}>
         <Card.Body>
           <h1>Project Sandwich</h1>
+          <Image src={logo} />
           <LoginButton />
         </Card.Body>
       </Card>
