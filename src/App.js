@@ -1,7 +1,10 @@
 import React from 'react';
 import LoginButton from './LoginButton';
+import './App.css';
+
 
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
