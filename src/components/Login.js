@@ -9,7 +9,7 @@ class Login extends React.Component {
       <Card className="text-center" style={{ width: '18rem' }}>
         <Card.Body>
           <h1>Project Sandwich</h1>
-          <Image src={logo} />
+          <Image src={logo} fluid />
           <LoginButton />
         </Card.Body>
       </Card>

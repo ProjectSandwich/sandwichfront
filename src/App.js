@@ -29,7 +29,6 @@ class App extends React.Component {
         }
         <Switch>
           <Route exact path="/">
-            Home 
           </Route>
           <Route path="/map">
             <MapPage />
