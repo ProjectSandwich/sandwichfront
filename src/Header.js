@@ -11,12 +11,12 @@ class Header extends React.Component {
   <>    
   <Navbar bg="dark" variant="dark">
     <Container>
-    <Navbar.Brand href="#home">PROJECT SANDWICH</Navbar.Brand>
+    <Navbar.Brand href="/home">PROJECT SANDWICH</Navbar.Brand>
     <Nav className="nav-Link">
-     <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#Map">SANDWICH FINDER</Nav.Link>
-      <Nav.Link href="#Profile">Profile</Nav.Link>
-      <Nav.Link href="#About Us">About Us</Nav.Link> 
+     <Nav.Link href="/home">Home</Nav.Link>
+      <Nav.Link href="/map">SANDWICH FINDER</Nav.Link>
+      <Nav.Link href="/profile">Profile</Nav.Link>
+      <Nav.Link href="/aboutus">About Us</Nav.Link> 
     </Nav>
     </Container>
   </Navbar>

@@ -2,11 +2,10 @@
 import Header from './Header'
 import React from 'react';
 import './App.css';
-import LoginButton from './LoginButton';
-import LogoutButton from './LogoutButton'
+import Login from './components/Login';
+import LogoutButton from './components/LogoutButton'
 import { withAuth0 } from '@auth0/auth0-react'
-import { Link, Switch, Route } from 'react-router-dom';
-import {NavItem } from 'react-bootstrap';
+import { Switch, Route } from 'react-router-dom';
 import MapPage from './components/mapPage';
 import Profile from './components/Profile';
 
@@ -25,12 +24,10 @@ class App extends React.Component {
               <LogoutButton />
             </>
           )
-          : <LoginButton />
+          : <Login />
         }
-        <NavItem><Link to="/map" className="nav-link">Map Page</Link></NavItem>
         <Switch>
           <Route exact path="/">
-            Home 
           </Route>
           <Route path="/map">
             <MapPage />
