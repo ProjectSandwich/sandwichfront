@@ -26,7 +26,7 @@ export default class MapPage extends React.Component {
     return (
       <>
         <Map />
-        <CreateSandwich onSave={this.handleCreate} />
+        <CreateSandwich onCreate={this.handleCreate} />
       </>
     )
   }
