@@ -21,16 +21,22 @@ export default class CreateSandwich extends React.Component {
       location: elements.location.value,
       description: elements.description.value,
     }
+    console.log('saving', formData);
+
+    this.props.onSave(formData);
+
+    event.target.reset();
+    elements.title.focus();
   }
 
   showModalOnClick = () => {
     console.log('Modal is showing!')
-    this.setState({ showModal: true});
+    this.setState({ showModal: true });
   }
 
   handleClose = () => {
     console.log('Please hide modal');
-    this.setState({ showModal: false});
+    this.setState({ showModal: false });
   }
 
   render() {
