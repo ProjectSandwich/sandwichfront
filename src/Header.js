@@ -8,17 +8,17 @@ class Header extends React.Component {
   render() {
     return (
   <>    
-  <Navbar bg="dark" variant="dark">
-    <Container>
+  {/* <Navbar bg="dark" variant="dark"> */}
+  <Navbar style={{backgroundColor: "#58595b", position: "sticky"}} variant="dark" fixed="top">
+    
     <Navbar.Brand href="/home">PROJECT SANDWICH</Navbar.Brand>
     <Nav className="nav-Link">
      <Nav.Link href="./home">Home</Nav.Link>
       <Nav.Link href="./mapPage">SANDWICH FINDER</Nav.Link>
       <Nav.Link href="./profile">Profile</Nav.Link>
       <Nav.Link href="./AboutUs">About Us</Nav.Link> 
-
-    </Nav>
-    </Container>
+     </Nav>
+    
   </Navbar>
   </>
     )
