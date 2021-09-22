@@ -17,7 +17,9 @@ export default class CreateSandwich extends React.Component {
     let formData = {
       sandwich: elements.sandwich.value,
       restaurant: elements.restaurant.value,
-      location: elements.location.value,
+      address: elements.address.value,
+      latitude: parseFloat(elements.latitude.value),
+      longitude: parseFloat(elements.longitude.value),
       description: elements.description.value,
     }
     console.log('saving', formData);
@@ -53,7 +55,9 @@ export default class CreateSandwich extends React.Component {
             <form method="post" onSubmit={this.handleSubmit}>
               <input placeholder="Sandwich Name" name="sandwich" />
               <input placeholder="Restaurant" name="restaurant" />
-              <input placeholder="Location" name="location" />
+              <input placeholder="Address" name="address" />
+              <input placeholder="Latitude" name="latitude" />
+              <input placeholder="Longitude" name="longitude" />
               <input placeholder="Why did you love it?!" name="description" />
               <Button onClick={this.handleClose} variant="secondary" type="submit">Save Sandwich</Button>
             </form>
