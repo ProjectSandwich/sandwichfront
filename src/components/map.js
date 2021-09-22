@@ -1,9 +1,10 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
+import SandwichMarker from './sandwichMarker';
 
 const key = process.env.REACT_APP_GMAPS_KEY;
 
-const SandwichMarker = ({ text }) => <div style={{fontSize: '50px'}}>🥪</div>;
+// const SandwichMarker = ({ sandwich }) => <div onClick={() => console.log(sandwich)} style={{fontSize: '50px'}}>🥪</div>;
 
 export default class Map extends React.Component {
 
@@ -26,6 +27,7 @@ export default class Map extends React.Component {
         >
           {this.props.sandwiches.map(sandwich => (
             <SandwichMarker
+            sandwich={ sandwich }
             key={ sandwich._id }
             lat={ sandwich.latitude }
             lng={ sandwich.longitude }
