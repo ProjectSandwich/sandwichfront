@@ -23,6 +23,10 @@ export default class CreateSandwich extends React.Component {
     }
   }
 
+  showModalOnClick = () => {
+    this.setState({ showModal: true});
+  }
+
   render() {
     return (
       <>
