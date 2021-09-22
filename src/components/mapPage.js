@@ -9,7 +9,7 @@ export default class MapPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      sandwiches: null,
+    
     };
   }
 
