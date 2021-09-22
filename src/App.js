@@ -34,7 +34,7 @@ class App extends React.Component {
         }
 
         <Container>
-        <div  className="container"><img src={backgroundimage} /></div>   
+        <div  className="container"><img src={backgroundimage} alt="" /></div>   
         <div  className="container"></div>
         </Container>
         <Switch>
