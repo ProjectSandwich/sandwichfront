@@ -9,8 +9,9 @@ import { Switch, Route } from 'react-router-dom';
 import MapPage from './components/mapPage';
 import Profile from './components/Profile';
 import AboutUs from './components/AboutUs';
+import Home from './components/Home';
 
-import { Container } from 'react-bootstrap';
+
 import backgroundimage from './images/backgroundimage.jpg';
 
 console.log('backgroundimage',backgroundimage)
@@ -33,12 +34,14 @@ class App extends React.Component {
           : <Login />
         }
 
-        <Container>
+        {/* <Container>
         <div  className="container"><img src={backgroundimage} alt="" /></div>   
         <div  className="container"></div>
-        </Container>
+        </Container> */}
+
         <Switch>
           <Route exact path="/">
+          <Home />
           </Route>
           <Route path="/map">
             <MapPage />
