@@ -14,12 +14,10 @@ export default class MapPage extends React.Component {
   }
 
   handleCreate = async sandwichInfo => {
-    let apiURL = `${SERVER}/getSandwiches`;
+    let apiURL = `${SERVER}/sandwiches`;
     let results = await axios.post(apiURL, sandwichInfo);
     let newSandwich = results.data;
     console.log(newSandwich);
-
-    this.fetchSandwiches();
   }
 
   render() {

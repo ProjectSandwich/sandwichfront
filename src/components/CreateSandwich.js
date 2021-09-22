@@ -10,7 +10,7 @@ export default class CreateSandwich extends React.Component {
     };
   }
 
-  handleSumbit = event => {
+  handleSubmit = event => {
     event.preventDefault();
 
     let elements = event.target.elements;
@@ -23,10 +23,10 @@ export default class CreateSandwich extends React.Component {
     }
     console.log('saving', formData);
 
-    this.props.onSave(formData);
+    this.props.onCreate(formData);
 
     event.target.reset();
-    elements.title.focus();
+    elements.sandwichName.focus();
   }
 
   showModalOnClick = () => {
