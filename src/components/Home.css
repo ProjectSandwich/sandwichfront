@@ -17,6 +17,12 @@
 .welcome-card {
   background: rgba(255,255,255, 0.5);
   height: 50vh;
+  font-family: 'Montserrat', sans-serif;
+  text: 30px;
+}
+
+about-us {
+  background-color: black;
 
 }
 
