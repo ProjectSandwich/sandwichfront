@@ -10,7 +10,10 @@ export default class CreateSandwich extends React.Component {
     };
   }
 
-  
+  handleSumbit = event => {
+    event.preventDefault();
+  }
+
   render() {
     return (
       <>
