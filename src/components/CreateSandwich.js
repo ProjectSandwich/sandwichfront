@@ -16,7 +16,7 @@ export default class CreateSandwich extends React.Component {
     let elements = event.target.elements;
     console.log(event.target.elements);
     let formData = {
-      sandwichName: elements.sandwichName.value,
+      sandwichName: elements.sandwich.value,
       restaurant: elements.restaurant.value,
       location: elements.location.value,
       description: elements.description.value,
@@ -52,7 +52,7 @@ export default class CreateSandwich extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <form method="post" onSubmit={this.handleSubmit}>
-              <input placeholder="Sandwhich Name" name="sandwichName" />
+              <input placeholder="Sandwich Name" name="sandwich" />
               <input placeholder="Restaurant" name="restaurant" />
               <input placeholder="Location" name="location" />
               <input placeholder="Why did you love it?!" name="description" />
