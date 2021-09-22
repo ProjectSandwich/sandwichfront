@@ -8,6 +8,12 @@ import { withAuth0 } from '@auth0/auth0-react'
 import { Switch, Route } from 'react-router-dom';
 import MapPage from './components/mapPage';
 import Profile from './components/Profile';
+import AboutUs from './components/AboutUs';
+
+import { Container } from 'react-bootstrap';
+import backgroundimage from './images/backgroundimage.jpg';
+
+console.log('backgroundimage',backgroundimage)
 
 class App extends React.Component {
   render() {
@@ -26,6 +32,11 @@ class App extends React.Component {
           )
           : <Login />
         }
+
+        <Container>
+        <div  className="container"><img src={backgroundimage} alt="" /></div>   
+        <div  className="container"></div>
+        </Container>
         <Switch>
           <Route exact path="/">
           </Route>
@@ -33,7 +44,7 @@ class App extends React.Component {
             <MapPage />
           </Route>
           <Route path="/aboutus">
-          About Us Component
+           <AboutUs />
           </Route>
           <Route path="/profile">
             <Profile />

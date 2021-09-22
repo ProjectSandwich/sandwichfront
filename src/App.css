@@ -13,6 +13,24 @@
   }
 }
 
+ 
+.container{
+  background-image: url("./images/backgroundimage.jpg");
+  height: 900px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* background {
+  height: 100%;
+  background-image: url(backgroundimage.jpg);
+  background-position: center center;
+  background-size: cover; 
+} */
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

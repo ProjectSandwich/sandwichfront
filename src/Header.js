@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import './header.css';
 import { Container } from "react-bootstrap";
 
-
 class Header extends React.Component {
   render() {
     return (
@@ -13,10 +12,11 @@ class Header extends React.Component {
     <Container>
     <Navbar.Brand href="/home">PROJECT SANDWICH</Navbar.Brand>
     <Nav className="nav-Link">
-     <Nav.Link href="/home">Home</Nav.Link>
-      <Nav.Link href="/map">SANDWICH FINDER</Nav.Link>
-      <Nav.Link href="/profile">Profile</Nav.Link>
-      <Nav.Link href="/aboutus">About Us</Nav.Link> 
+     <Nav.Link href="./home">Home</Nav.Link>
+      <Nav.Link href="./mapPage">SANDWICH FINDER</Nav.Link>
+      <Nav.Link href="./profile">Profile</Nav.Link>
+      <Nav.Link href="./AboutUs">About Us</Nav.Link> 
+
     </Nav>
     </Container>
   </Navbar>
