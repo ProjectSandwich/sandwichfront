@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 const key = process.env.REACT_APP_GMAPS_KEY;
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const SandwichMarker = ({ text }) => <div style={{fontSize: '50px'}}>🥪</div>;
 
 export default class Map extends React.Component {
   render(){
@@ -22,10 +22,9 @@ export default class Map extends React.Component {
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
         >
-          <AnyReactComponent
+          <SandwichMarker
             lat={42.0667}
             lng={-93.4}
-            text="Default Marker"
           />
         </GoogleMapReact>
       </div>
