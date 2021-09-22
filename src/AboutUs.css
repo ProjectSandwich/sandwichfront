@@ -1,0 +1,25 @@
+#aboutusDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  background-color: #eeebe4;
+  height:100%;
+}
+
+
+#mistiProfileImage, #ianProfileImage, #susanProfileImage{
+  height:300px;
+  width:300px;
+  margin-top:4%;
+  transition: all 0.8s ease-in-out;
+}
+
+
+#mistiaboutus, #ianaboutus, #susanaboutus{
+  margin:2%;
+}
+
+
+

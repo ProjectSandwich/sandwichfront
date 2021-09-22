@@ -9,6 +9,7 @@ import { Link, Switch, Route } from 'react-router-dom';
 import {NavItem } from 'react-bootstrap';
 import MapPage from './components/mapPage';
 import Profile from './components/Profile';
+import AboutUs from './components/AboutUs';
 
 class App extends React.Component {
   render() {
@@ -30,13 +31,13 @@ class App extends React.Component {
         <NavItem><Link to="/map" className="nav-link">Map Page</Link></NavItem>
         <Switch>
           <Route exact path="/">
-            Home 
+            Home  
           </Route>
           <Route path="/map">
             <MapPage />
           </Route>
           <Route path="/aboutus">
-          About Us Component
+           <AboutUs />
           </Route>
           <Route path="/profile">
             <Profile />
