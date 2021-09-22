@@ -40,7 +40,7 @@ export default class MapPage extends React.Component {
   render() {
     return (
       <>
-        <Map sandwichExp={this.state.sandwiches} />
+        <Map sandwiches={this.state.sandwiches} />
         
         <CreateSandwich onCreate={this.handleCreate} />
       </>

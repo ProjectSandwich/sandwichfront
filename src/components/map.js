@@ -8,7 +8,7 @@ const SandwichMarker = ({ text }) => <div style={{fontSize: '50px'}}>🥪</div>;
 export default class Map extends React.Component {
 
   render(){
-    console.log('mapjs',this.props.sandwichExp);
+    console.log('mapjs',this.props.sandwiches);
     const defaultProps = {
       center: {
         lat: 42.0667,
@@ -24,15 +24,13 @@ export default class Map extends React.Component {
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
         >
-          {/* {this.state.sandwiches.length > 0 &&
-        <> 
-          {this.state.sandwiches.map(sandwich => (console.log(sandwich)))}
-          </>
-        } */}
-          <SandwichMarker
-            lat={42.0667}
-            lng={-93.4}
+          {this.props.sandwiches.map(sandwich => (
+            <SandwichMarker
+            key={ sandwich._id }
+            lat={ sandwich.latitude }
+            lng={ sandwich.longitude }
           />
+          ))}
         </GoogleMapReact>
       </div>
     );
