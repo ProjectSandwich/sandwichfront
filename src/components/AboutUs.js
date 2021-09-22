@@ -1,9 +1,9 @@
 import React from 'react';
 import '../AboutUs.css';
 import Image from 'react-bootstrap/Image';
-import Susan from '../assets/Susan.jpg';
-import Ian from '../assets/Ian.jpg';
-import Misti from '../assets/Misti.jpg';
+import Susan from '../images/Susan.jpg';
+import Ian from '../images/Ian.jpg';
+import Misti from '../images/Misti.jpg';
 
 
 

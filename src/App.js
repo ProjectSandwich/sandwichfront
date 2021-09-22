@@ -11,7 +11,7 @@ import Profile from './components/Profile';
 import AboutUs from './components/AboutUs';
 
 import { Container } from 'react-bootstrap';
-import backgroundimage from './assets/backgroundimage.jpg';
+import backgroundimage from './images/backgroundimage.jpg';
 
 console.log('backgroundimage',backgroundimage)
 
