@@ -1,13 +1,22 @@
-.container{
+.home-background {
   background-image: url("../images/backgroundimage.jpg"); 
   height: 900px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  background-color: black;
+  width:100vw;
+  padding-top: 10vh;
 
   
   
   /* z-index: -1; */
+}
+
+.welcome-card {
+  background: rgba(255,255,255, 0.5);
+  height: 50vh;
+
 }
 

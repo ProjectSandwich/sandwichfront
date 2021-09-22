@@ -11,9 +11,9 @@ class Header extends React.Component {
   {/* <Navbar bg="dark" variant="dark"> */}
   <Navbar style={{backgroundColor: "#58595b", position: "sticky"}} variant="dark" fixed="top">
     
-    <Navbar.Brand href="/home">PROJECT SANDWICH</Navbar.Brand>
+    <Navbar.Brand href="/">PROJECT SANDWICH</Navbar.Brand>
     <Nav className="nav-Link">
-     <Nav.Link href="./home">Home</Nav.Link>
+     <Nav.Link href="./">Home</Nav.Link>
       <Nav.Link href="./mapPage">SANDWICH FINDER</Nav.Link>
       <Nav.Link href="./profile">Profile</Nav.Link>
       <Nav.Link href="./AboutUs">About Us</Nav.Link> 

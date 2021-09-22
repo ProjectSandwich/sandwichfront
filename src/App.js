@@ -41,7 +41,7 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/">
-          <Home className="full-width"/>
+          <Home />
           </Route>
           <Route path="/map">
             <MapPage />
