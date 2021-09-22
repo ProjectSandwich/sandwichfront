@@ -14,9 +14,8 @@ export default class CreateSandwich extends React.Component {
     event.preventDefault();
 
     let elements = event.target.elements;
-    console.log(event.target.elements);
     let formData = {
-      sandwichName: elements.sandwich.value,
+      sandwich: elements.sandwich.value,
       restaurant: elements.restaurant.value,
       location: elements.location.value,
       description: elements.description.value,
@@ -26,7 +25,7 @@ export default class CreateSandwich extends React.Component {
     this.props.onCreate(formData);
 
     event.target.reset();
-    elements.sandwichName.focus();
+    elements.sandwich.focus();
   }
 
   showModalOnClick = () => {
