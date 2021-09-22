@@ -11,6 +11,11 @@ import MapPage from './components/mapPage';
 import Profile from './components/Profile';
 import AboutUs from './components/AboutUs';
 
+import { Container } from 'react-bootstrap';
+import backgroundimage from './assets/backgroundimage.jpg';
+
+console.log('backgroundimage',backgroundimage)
+
 class App extends React.Component {
   render() {
     const { auth0 } = this.props;
@@ -28,6 +33,10 @@ class App extends React.Component {
           )
           : <LoginButton />
         }
+        <Container>
+        {/* <div  className="container"><img src={backgroundimage} /></div> */}
+        <div  className="container"></div>
+        </Container>
         <NavItem><Link to="/map" className="nav-link">Map Page</Link></NavItem>
         <Switch>
           <Route exact path="/">

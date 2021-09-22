@@ -13,6 +13,16 @@
   }
 }
 
+ 
+.container{
+  background-image: url("./assets/backgroundimage.jpg");
+  height: 900px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 /* background {
   height: 100%;
   background-image: url(backgroundimage.jpg);
