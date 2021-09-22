@@ -12,6 +12,15 @@ export default class CreateSandwich extends React.Component {
 
   handleSumbit = event => {
     event.preventDefault();
+
+    let elements = event.target.elements;
+    console.log(event.target.elements);
+    let formData = {
+      sandwichName: elements.sandwichName.value,
+      restaurant: elements.restaurant.value,
+      location: elements.location.value,
+      description: elements.description.value,
+    }
   }
 
   render() {
