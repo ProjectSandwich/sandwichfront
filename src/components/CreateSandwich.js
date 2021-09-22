@@ -30,7 +30,7 @@ export default class CreateSandwich extends React.Component {
   render() {
     return (
       <>
-        <Button class="row justify-content-center" style={{ width: "25%" }}
+        <Button className="row justify-content-center" style={{ width: "25%" }}
           onClick={this.showModalOnClick} variant="secondary">Add a Sandwich
         </Button>
         <Modal show={this.state.showModal} onHide={this.handleClose} >
