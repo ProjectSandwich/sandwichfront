@@ -44,7 +44,7 @@ export default class SaveSandwich extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <form onSubmit={this.handleSave}>
-              <input placeholder="Sandwhich Name" name="sandwich" />
+              <input placeholder="Sandwich Name" name="sandwich" />
               <input placeholder="What is so good about it?!" name="description" />
               <Button variant="secondary" type="submit">Save Sandwich</Button>
             </form>
