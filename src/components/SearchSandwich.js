@@ -10,6 +10,7 @@ export default class SearchSandwich extends React.Component {
     super(props)
 
     this.state = {
+      showModal: false,
       locations: null,
     };
   }
@@ -23,7 +24,7 @@ export default class SearchSandwich extends React.Component {
       restaurant: elements.restaurant.value,
     }
     console.log(formData);
-    
+
     this.getYelpData(formData);
   }
 
@@ -40,24 +41,51 @@ export default class SearchSandwich extends React.Component {
 
   }
 
+  showModalOnClick = () => {
+    console.log('Modal is showing!')
+    this.setState({ showModal: true });
+  }
+
+  handleClose = () => {
+    console.log('Please hide modal');
+    this.setState({ showModal: false });
+  }
+
   render() {
     console.log(this.state);
     return (
       <>
-        <form onSubmit={this.handleSearch}>
-          <input placeholder="City & State" name="location" />
-          <input placeholder="Restaurant Name" name="restaurant" />
-          <Button variant="secondary" type="submit">Search for Restaurant</Button>
-        </form>
-      
-      {this.state.locations && (
-        <>
-        <h2>Search Results</h2>
-        {this.state.locations.map(location => (
-          <SearchLocation location={location} />
-        ))}
-        </>
-      )}
+        <div>
+          <Button className="row justify-content-center" style={{ width: "25%" }}
+            onClick={this.showModalOnClick} variant="secondary">Search for Location
+          </Button>
+          <Modal show={this.state.showModal} onHide={this.handleClose} >
+            <Modal.Header closeButton>
+              <Modal.Title>Add your best sandwich experience to the map!
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <form onSubmit={this.handleSearch}>
+                <input placeholder="City & State" name="location" />
+                <input placeholder="Restaurant Name" name="restaurant" />
+                <Button variant="secondary" type="submit">Search for Restaurant</Button>
+              </form>
+
+              {
+          this.state.locations && (
+            <div>
+              <h2>Search Results</h2>
+              {this.state.locations.map(location => (
+                <SearchLocation location={location} />
+              ))}
+            </div>
+          )
+        }
+            </Modal.Body>
+          </Modal>
+        </div>
+
+        
       </>
     )
   }
