@@ -12,6 +12,7 @@ export default class SearchSandwich extends React.Component {
     this.state = {
       showModal: false,
       locations: null,
+      selectedLocation: null,
     };
   }
 
@@ -49,6 +50,15 @@ export default class SearchSandwich extends React.Component {
     this.setState({ showModal: false });
   }
 
+  clearSelectedLocation = () => {
+    this.setState({ selectedLocation: null, showModal: true })
+  }
+
+  setSelectedLocation = (location) => {
+    this.setState({ selectedLocation: location, showModal: false })
+
+  }
+
   render() {
     console.log(this.state);
     return (
@@ -70,20 +80,33 @@ export default class SearchSandwich extends React.Component {
               </form>
 
               {
-          this.state.locations && (
-            <div>
-              <h2>Search Results</h2>
-              {this.state.locations.map(location => (
-                <SearchLocation location={location} />
-              ))}
-            </div>
-          )
-        }
+                this.state.locations && (
+                  <div>
+                    <h2>Search Results</h2>
+                    {this.state.locations.map(location => (
+                      <SearchLocation location={location} setSelectedLocation={this.setSelectedLocation} />
+                    ))}
+                  </div>
+                )
+              }
             </Modal.Body>
           </Modal>
         </div>
 
-        
+        {
+          this.state.selectedLocation && (
+            <Modal show={true} onHide={this.clearSelectedLocation}>
+              <Modal.Header closeButton>
+                <Modal.Title>Add Restaurant
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                {this.state.selectedLocation.restaurant}
+              </Modal.Body>
+            </Modal>
+          )
+        }
+
       </>
     )
   }
