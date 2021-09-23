@@ -2,23 +2,23 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './header.css';
-import { Container } from "react-bootstrap";
+
 
 class Header extends React.Component {
   render() {
     return (
   <>    
-  <Navbar bg="dark" variant="dark">
-    <Container>
-    <Navbar.Brand href="/home">PROJECT SANDWICH</Navbar.Brand>
+  {/* <Navbar bg="dark" variant="dark"> */}
+  <Navbar style={{backgroundColor: "#58595b", position: "sticky"}} variant="dark" fixed="top">
+    
+    <Navbar.Brand href="/">PROJECT SANDWICH</Navbar.Brand>
     <Nav className="nav-Link">
-     <Nav.Link href="./home">Home</Nav.Link>
+     <Nav.Link href="./">Home</Nav.Link>
       <Nav.Link href="./mapPage">SANDWICH FINDER</Nav.Link>
       <Nav.Link href="./profile">Profile</Nav.Link>
       <Nav.Link href="./AboutUs">About Us</Nav.Link> 
-
-    </Nav>
-    </Container>
+     </Nav>
+    
   </Navbar>
   </>
     )

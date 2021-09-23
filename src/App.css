@@ -1,8 +1,12 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.App-logo {
+.full-width{
+  background-color: black;
+  width:100vw; 
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,16 +15,17 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
  
-.container{
-  background-image: url("./images/backgroundimage.jpg");
-  height: 900px;
+/* .container{
+  background-image: url("./images/backgroundimage.jpg"); 
+  height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+  z-index: -1; */
+/* }  */
 
 
 /* background {
@@ -31,7 +36,7 @@
 } */
 
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -40,9 +45,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -53,4 +58,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
