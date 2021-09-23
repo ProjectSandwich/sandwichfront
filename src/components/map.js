@@ -19,7 +19,7 @@ export default class Map extends React.Component {
     };
   
     return (
-      <div className="map-wrapper" style={{ height: '100vh', width: '50%' }}>
+      <div className="map-wrapper" style={{ height: '55vh', width: '40%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key }}
           defaultCenter={defaultProps.center}
