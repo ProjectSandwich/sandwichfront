@@ -42,12 +42,10 @@ export default class SearchSandwich extends React.Component {
   }
 
   showModalOnClick = () => {
-    console.log('Modal is showing!')
     this.setState({ showModal: true });
   }
 
   handleClose = () => {
-    console.log('Please hide modal');
     this.setState({ showModal: false });
   }
 
@@ -61,7 +59,7 @@ export default class SearchSandwich extends React.Component {
           </Button>
           <Modal show={this.state.showModal} onHide={this.handleClose} >
             <Modal.Header closeButton>
-              <Modal.Title>Add your best sandwich experience to the map!
+              <Modal.Title>Search for a Restaurant
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
