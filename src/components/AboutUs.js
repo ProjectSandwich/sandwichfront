@@ -8,6 +8,7 @@ import Misti from '../images/Misti.jpg';
 
 
 
+
 const AboutUs = () => {
   return (
     <div id='aboutusDiv'>
