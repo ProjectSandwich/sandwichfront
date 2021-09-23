@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import SaveSandwich from './SaveSandwich';
 import { Modal, Button } from 'react-bootstrap';
 import SearchLocation from './SearchLocation';
 
@@ -95,15 +96,7 @@ export default class SearchSandwich extends React.Component {
 
         {
           this.state.selectedLocation && (
-            <Modal show={true} onHide={this.clearSelectedLocation}>
-              <Modal.Header closeButton>
-                <Modal.Title>Add Restaurant
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                {this.state.selectedLocation.restaurant}
-              </Modal.Body>
-            </Modal>
+           <SaveSandwich />
           )
         }
 
