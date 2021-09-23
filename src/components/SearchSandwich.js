@@ -27,8 +27,6 @@ export default class SearchSandwich extends React.Component {
     }
     console.log(formData);
 
-
-
     this.getYelpData(formData);
   }
 
@@ -101,7 +99,6 @@ export default class SearchSandwich extends React.Component {
         </div>
 
         <SaveSandwich onSave={this.handleSave} location={this.state.selectedLocation} onClose={this.clearSelectedLocation} />
-
       </>
     )
   }
