@@ -1,10 +1,50 @@
 
-
-
-.navbar-style {
-  background-size: contain;
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
-  height: 100px;
-  text-align: center;
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
+
+.navbar-nav {
+  justify-content: space-between; 
+}
+
+
+.navbar-Title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #f9f8f7;
+}
+
+.navbar-nav {
+  flex: auto;
+  justify-content: space-evenly;
+}
+
+.nav-link{
+  color: #f7f4f0!important;
+  transition: all 0.6s ease-in-out!important;
+}
+
+.nav-link:hover{
+  color: #ef8057 !important;
+}
+
+
+#navBar img{
+  height:20px;
+  width:20px;
+}
+
+
+/* .navBar-style {
+  /* background-size: contain; */
+  /* height: 300px; */
+  
+/* } */ 

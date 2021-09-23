@@ -1,5 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
+
+import './map.css'
 import SandwichMarker from './SandwichMarker';
 
 const key = process.env.REACT_APP_GMAPS_KEY;
@@ -17,7 +19,7 @@ export default class Map extends React.Component {
     };
   
     return (
-      <div style={{ height: '100vh', width: '50%' }}>
+      <div className="map-wrapper" style={{ height: '100vh', width: '50%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key }}
           defaultCenter={defaultProps.center}
