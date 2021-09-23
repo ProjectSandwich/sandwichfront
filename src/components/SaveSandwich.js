@@ -1,24 +1,32 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import axios from 'axios';
+const SERVER = process.env.REACT_APP_SERVER;
 
 export default class SaveSandwich extends React.Component {
-
-  handleSave = event => {
+ 
+  handleSave = async event => {
     event.preventDefault();
 
     let elements = event.target.elements;
     let formData = {
       sandwich: elements.sandwich.value,
       description: elements.description.value,
-      location: this.props.location,
+      latitude: this.props.location.lat,
+      longitude: this.props.location.lon,
+      yelpUrl: this.props.location.yelpUrl,
+      restaurant: this.props.location.restaurant,
     }
     console.log(formData);
-    
-    // onSave(formData);
-    this.handleClose()
-    
-  }
 
+    let apiUrl = `${SERVER}/sandwiches`;
+    let results = await axios.post(apiUrl, formData);
+    let newSandwich = results.data;
+    console.log('New Sandwich', newSandwich);
+
+    this.handleClose();
+
+  }
 
   handleClose = () => {
     this.setState({ showModal: false });
