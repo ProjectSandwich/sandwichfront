@@ -3,6 +3,7 @@ import CreateSandwich from './CreateSandwich';
 import axios from 'axios';
 // import GoogleMapReact from 'google-map-react';
 import Map from './map';
+import SearchSandwich from './SearchSandwich';
 const SERVER = process.env.REACT_APP_SERVER;
 
 export default class MapPage extends React.Component {
@@ -25,6 +26,7 @@ export default class MapPage extends React.Component {
       <>
         <Map />
         <CreateSandwich onCreate={this.handleCreate} />
+        <SearchSandwich />
       </>
     )
   }
