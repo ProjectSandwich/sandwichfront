@@ -9,7 +9,7 @@ const LoginButton = () => {
 
   const { loginWithRedirect } = useAuth0();
 
-  return <Button variant="secondary" onClick={() => loginWithRedirect()}>Log In</Button>;
+  return <Button variant="dark" onClick={() => loginWithRedirect()}>Log In</Button>;
 };
 
 export default LoginButton;

@@ -15,7 +15,7 @@ class Header extends React.Component {
     
   <Navbar.Brand href="/">PROJECT SANDWICH</Navbar.Brand>
     <Nav className="nav-Link">
-     <Nav.Link as={Link} to="/Home">Home</Nav.Link>
+     <Nav.Link as={Link} to="/">Home</Nav.Link>
      <Nav.Link as={Link} to="/mapPage">SANDWICH FINDER</Nav.Link>
      <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
      <Nav.Link as={Link} to="/AboutUs">About Us</Nav.Link> 

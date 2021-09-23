@@ -7,7 +7,7 @@ import './Login.css'
 class Login extends React.Component {
   render() {
     return (
-      <Card className="text-center" style={{ width: '18rem' }}>
+      <Card className="text-center login-card" style={{ width: '18rem' }}>
         <Card.Body>
           <h1>Join CLUB SANDWICH!</h1>
           <Image src={logo} fluid />

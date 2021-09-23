@@ -2,8 +2,6 @@
 import Header from './Header'
 import React from 'react';
 import './App.css';
-import Login from './components/Login';
-import LogoutButton from './components/LogoutButton'
 import { withAuth0 } from '@auth0/auth0-react'
 import { Switch, Route } from 'react-router-dom';
 import MapPage from './components/mapPage';
@@ -24,15 +22,6 @@ class App extends React.Component {
     return (
       <>
       <Header/>
-        {auth0.isAuthenticated
-          ? (
-            <>
-              Welcome back, {auth0.user.name}
-              <LogoutButton />
-            </>
-          )
-          : <Login />
-        }
         <Switch>
           <Route exact path="/">
           <Home />
