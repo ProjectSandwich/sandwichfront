@@ -1,26 +1,45 @@
-navBar {
+/* navBar {
   background-color: #181615;
   width:100%;
   display: flex;
   justify-content: space-evenly;
-  height: 100px;
+  height: 150px;
   transition: all 0.8s ease-in-out;
+} */
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.navbar-nav {
+  justify-content: space-between; 
 }
 
 
 .navBarTitle{
   font-family: 'Montserrat', sans-serif;;
-  font-size: 40px;
-  color: #76736E;
+  font-size: 60px;
+  color: #f9f8f7;
+}
+
+.navbar-nav {
+  flex: auto;
+  justify-content: space-evenly;
 }
 
 .nav-link{
-  color: #938877!important;
+  color: #f7f4f0!important;
   transition: all 0.6s ease-in-out!important;
 }
 
 .nav-link:hover{
-  color: #DCD7CE !important;
+  color: #ef8057 !important;
 }
 
 
@@ -30,8 +49,8 @@ navBar {
 }
 
 
-.navbar-style {
-  background-size: contain;
-  height: 100px;
-  /* text-align: center; */
-}
+/* .navBar-style {
+  /* background-size: contain; */
+  /* height: 300px; */
+  
+/* } */ 
