@@ -84,8 +84,8 @@ export default class SearchSandwich extends React.Component {
                 this.state.locations && (
                   <div>
                     <h2>Search Results</h2>
-                    {this.state.locations.map(location => (
-                      <SearchLocation location={location} setSelectedLocation={this.setSelectedLocation} />
+                    {this.state.locations.map((location, idx) => (
+                      <SearchLocation key={idx} location={location} setSelectedLocation={this.setSelectedLocation} />
                     ))}
                   </div>
                 )
