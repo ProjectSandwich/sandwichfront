@@ -1,10 +1,8 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import SandwichMarker from './sandwichMarker';
+import SandwichMarker from './SandwichMarker';
 
 const key = process.env.REACT_APP_GMAPS_KEY;
-
-// const SandwichMarker = ({ sandwich }) => <div onClick={() => console.log(sandwich)} style={{fontSize: '50px'}}>🥪</div>;
 
 export default class Map extends React.Component {
 
