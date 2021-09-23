@@ -70,18 +70,19 @@ export default class SearchSandwich extends React.Component {
     return (
       <>
         <Button className="searchButton" style={{ width: "15%" }}
-          onClick={this.showModalOnClick} variant="secondary">Search for Location
+          onClick={this.showModalOnClick} variant="secondary">Add Your Own Sandwich
         </Button>
         <Modal show={this.state.showModal} onHide={this.handleClose} >
           <Modal.Header closeButton>
-            <Modal.Title>Search for a Restaurant
+            <Modal.Title>Whereabouts?
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+              Where did you have your sandwich?
             <form onSubmit={this.handleSearch}>
               <input placeholder="City & State" name="location" />
               <input placeholder="Restaurant Name" name="restaurant" />
-              <Button variant="secondary" type="submit">Search for Restaurant</Button>
+              <Button variant="secondary" type="submit">SUBmit</Button>
             </form>
             {
               this.state.locations && (
