@@ -1,10 +1,37 @@
+navBar {
+  background-color: #181615;
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  transition: all 0.8s ease-in-out;
+}
 
+
+.navBarTitle{
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 40px;
+  color: #76736E;
+}
+
+.nav-link{
+  color: #938877!important;
+  transition: all 0.6s ease-in-out!important;
+}
+
+.nav-link:hover{
+  color: #DCD7CE !important;
+}
+
+
+#navBar img{
+  height:20px;
+  width:20px;
+}
 
 
 .navbar-style {
   background-size: contain;
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
   height: 100px;
-  text-align: center;
+  /* text-align: center; */
 }

@@ -12,7 +12,7 @@ import AboutUs from './components/AboutUs';
 import Home from './components/Home';
 
 
-import backgroundimage from './images/backgroundimage.jpg';
+import backgroundimage from './assets/backgroundimage.jpg';
 
 console.log('backgroundimage',backgroundimage)
 
@@ -33,12 +33,6 @@ class App extends React.Component {
           )
           : <Login />
         }
-
-        {/* <Container>
-        <div  className="container"><img src={backgroundimage} alt="" /></div>   
-        <div  className="container"></div>
-        </Container> */}
-
         <Switch>
           <Route exact path="/">
           <Home />
