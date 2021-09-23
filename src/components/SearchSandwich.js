@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React from 'react';
 import SaveSandwich from './SaveSandwich';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 import SearchLocation from './SearchLocation';
+import './SearchSandwich.css';
 
 const apiUrl = process.env.REACT_APP_SERVER
 
@@ -68,36 +69,37 @@ export default class SearchSandwich extends React.Component {
     console.log(this.state);
     return (
       <>
-        <div>
-          <Button className="row justify-content-center" style={{ width: "25%" }}
-            onClick={this.showModalOnClick} variant="secondary">Search for Location
-          </Button>
-          <Modal show={this.state.showModal} onHide={this.handleClose} >
-            <Modal.Header closeButton>
-              <Modal.Title>Search for a Restaurant
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <form onSubmit={this.handleSearch}>
-                <input placeholder="City & State" name="location" />
-                <input placeholder="Restaurant Name" name="restaurant" />
-                <Button variant="secondary" type="submit">Search for Restaurant</Button>
-              </form>
-
-              {
-                this.state.locations && (
-                  <div>
+        <Button className="searchButton" style={{ width: "15%" }}
+          onClick={this.showModalOnClick} variant="secondary">Add Your Own Sandwich
+        </Button>
+        <Modal show={this.state.showModal} onHide={this.handleClose} >
+          <Modal.Header closeButton>
+            <Modal.Title>Whereabouts?
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+              Where did you have your sandwich?
+            <form onSubmit={this.handleSearch}>
+              <input placeholder="City & State" name="location" />
+              <input placeholder="Restaurant Name" name="restaurant" />
+              <Button variant="secondary" type="submit">SUBmit</Button>
+            </form>
+            {
+              this.state.locations && (
+                <Container>
+                  <Row>
                     <h2>Search Results</h2>
                     {this.state.locations.map((location, idx) => (
-                      <SearchLocation key={idx} location={location} setSelectedLocation={this.setSelectedLocation} />
+                      <Col key={idx}>
+                        <SearchLocation location={location} setSelectedLocation={this.setSelectedLocation} />
+                      </Col>
                     ))}
-                  </div>
-                )
-              }
-            </Modal.Body>
-          </Modal>
-        </div>
-
+                  </Row>
+                </Container>
+              )
+            }
+          </Modal.Body>
+        </Modal>
         <SaveSandwich onSave={this.handleSave} location={this.state.selectedLocation} onClose={this.clearSelectedLocation} />
       </>
     )
