@@ -5,12 +5,9 @@ export default class SearchLocation extends React.Component {
     const location = this.props.location
 
     return (
-
       <div>
         {location.restaurant}
       </div>
-
     )
   }
-
 }

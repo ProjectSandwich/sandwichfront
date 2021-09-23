@@ -62,4 +62,3 @@ export default class SearchSandwich extends React.Component {
     )
   }
 }
-
