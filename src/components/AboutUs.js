@@ -14,7 +14,7 @@ const AboutUs = () => {
       <div key={1} id="mistiaboutus">
         <h1>Misti Dinzy</h1>
         <Image id="mistiProfileImage" src={Misti} alt={'Misti Dinzy'} roundedCircle />
-        <p>Misti is an aspiring web developer and digital artist. Previously, she worked at Nordstrom for about 8 years, as a Fraud Prevention Analyst and then a Quality Assurance Auditor. She is passionate about volunteering and animal rescue. Misti lives with her fiance Dakota, their dog, two cats, chinchilla and foster dogs. She came to Delta V Code School to gain the skills that will allow her to move into a fulfilling career, with a healthier work/life balance and remote work flexibility. She wants to be able to apply her analytical skills and determination in a way that creates a positive impact to her community.</p>
+        <p>Misti is an aspiring web developer and digital artist. Previously, she worked at Nordstrom for about 8 years, as a Fraud Prevention Analyst and then a Quality Assurance Auditor. She is passionate about volunteering and animal rescue. Misti lives with her fiance Dakota, their dog, two cats, chinchilla and foster dogs. She came to Delta V Code School to gain the skills that will allow her to move into a fulfilling career, with a healthier work/life balance and remote work flexibility. She wants to be able to apply her analytical skills and determination in a way that creates a positive impact to her community. Her favorite sandwich is a Banana Fluffernutter.</p>
       </div>
       <div key={2} id="ianaboutus">
         <h1>Ian Whitmore</h1>

@@ -1,13 +1,7 @@
-/* navBar {
-  background-color: #181615;
-  width:100%;
-  display: flex;
-  justify-content: space-evenly;
-  height: 150px;
-  transition: all 0.8s ease-in-out;
-} */
 
 .navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -22,9 +16,9 @@
 }
 
 
-.navBarTitle{
-  font-family: 'Montserrat', sans-serif;;
-  font-size: 60px;
+.navbar-Title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
   color: #f9f8f7;
 }
 
