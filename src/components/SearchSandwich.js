@@ -27,7 +27,7 @@ export default class SearchSandwich extends React.Component {
     }
     console.log(formData);
 
-    
+
 
     this.getYelpData(formData);
   }
@@ -60,6 +60,10 @@ export default class SearchSandwich extends React.Component {
   setSelectedLocation = (location) => {
     this.setState({ selectedLocation: location, showModal: false })
 
+  }
+
+  handleSave = () => {
+    this.setState({ showModal: false, selectedLocation: null })
   }
 
   render() {
@@ -96,7 +100,7 @@ export default class SearchSandwich extends React.Component {
           </Modal>
         </div>
 
-        <SaveSandwich location={this.state.selectedLocation} onClose={this.clearSelectedLocation} />
+        <SaveSandwich onSave={this.handleSave} location={this.state.selectedLocation} onClose={this.clearSelectedLocation} />
 
       </>
     )

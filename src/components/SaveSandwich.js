@@ -24,12 +24,8 @@ export default class SaveSandwich extends React.Component {
     let newSandwich = results.data;
     console.log('New Sandwich', newSandwich);
 
-    this.handleClose();
+    this.props.onSave();
 
-  }
-
-  handleClose = () => {
-    this.setState({ showModal: false });
   }
 
   render() {
