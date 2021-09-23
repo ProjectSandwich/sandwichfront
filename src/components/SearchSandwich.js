@@ -94,11 +94,7 @@ export default class SearchSandwich extends React.Component {
           </Modal>
         </div>
 
-        {
-          this.state.selectedLocation && (
-           <SaveSandwich location={this.state.selectedLocation} onClose={this.clearSelectedLocation} />
-          )
-        }
+        <SaveSandwich location={this.state.selectedLocation} onClose={this.clearSelectedLocation} />
 
       </>
     )
