@@ -28,13 +28,16 @@ export default class SandwichMarker extends React.Component {
             show={this.state.show}
             onHide={this.hideModal}
           >
-            {sandwich.sandwich}
-
-
+          <Modal.Header closeButton/>
+          <Modal.Body>
+            <li>{sandwich.sandwich}</li>
+            <li>{sandwich.restaurant}</li>
+            <li>{sandwich.address}</li>
+          </Modal.Body>
+        
           </Modal>
         </div>
       </>
-
     );
   }
 }
