@@ -2,6 +2,7 @@ import React from 'react';
 import CreateSandwich from './CreateSandwich';
 import axios from 'axios';
 import Map from './map';
+import SearchSandwich from './SearchSandwich';
 // import SandwichMarker from './map';
 
 const SERVER = process.env.REACT_APP_SERVER;
@@ -43,6 +44,7 @@ export default class MapPage extends React.Component {
         <Map sandwiches={this.state.sandwiches} />
         
         <CreateSandwich onCreate={this.handleCreate} />
+        <SearchSandwich />
       </>
     )
   }
