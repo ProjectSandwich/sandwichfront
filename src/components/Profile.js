@@ -12,7 +12,7 @@ const Profile = () => {
 
   return (
     isAuthenticated && (
-      <div className="profile-wrapper" style={{ height: '100vh', width: '50%' }}>
+      <div className="profile-wrapper" style={{ height: '50vh', width: '50%' }}>
         <h1>Your Profile</h1>
         <Image src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
