@@ -30,8 +30,9 @@ export default class SandwichMarker extends React.Component {
           >
           <Modal.Header closeButton><h2>{sandwich.sandwich}</h2></Modal.Header>
           <Modal.Body>
+          {sandwich.description && <li> {sandwich.description} </li>}
           {sandwich.restaurant && <li> {sandwich.restaurant} </li>}
-          {sandwich.address && <li> {sandwich.address} </li>}
+          {sandwich.address && <li> {sandwich.address}</li>}
           {sandwich.yelpUrl && <li> <a href={sandwich.yelpUrl}>View On Yelp</a></li>}
           </Modal.Body>
           </Modal>
