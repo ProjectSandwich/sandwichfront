@@ -25,7 +25,7 @@ const AboutUs = () => {
       <div key={3} id="susanaboutus">
         <h1>Susan Hargus</h1>
         <Image id="susanProfileImage" src={Susan} alt={'Susan Hargus'} roundedCircle />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
+        <p>Hello! My name is Susan Hargus. My family and I moved to Mount Vernon from Los Angeles almost 20 years ago. I graduated with a BFA from the U of Iowa and I trained at an Atelier in Minneapolis in the painting manner known as ‘Classical Realism’. I came to DeltaV because I always had an interest in coding. I look at coding as a skill that is creative and employs that same kind of deep thinking one uses when creating art. Its inherently creative qualities and ever evolving nature provide the opportunity of continual discovery and learning. Her favorite sandwich is bahn mi.</p>
       </div>
     </div>
   );

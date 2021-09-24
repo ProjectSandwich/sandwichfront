@@ -19,6 +19,7 @@ export class Home extends React.Component {
             <Card.Body>
               <h1>Welcome to Project Sandwich!</h1>
               <h2>
+
                 Have you have ever had a sandwich that was so good, you could
                 say it was a transcendental experience? You just can’t stop
                 thinking about it and want to share it with others, and maybe

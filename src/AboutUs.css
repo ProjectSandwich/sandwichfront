@@ -17,12 +17,14 @@ body{
   height:300px;
   width:300px;
   margin-top:4%;
+  margin-bottom:4%;
   
 }
 
 
 #mistiaboutus, #ianaboutus, #susanaboutus{
   margin:2%;
+  width: 500px;
 }
 
 
