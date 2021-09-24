@@ -4,6 +4,7 @@ import SaveSandwich from './SaveSandwich';
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 import SearchLocation from './SearchLocation';
 import './SearchSandwich.css';
+import Form from 'react-bootstrap/Form'
 
 const apiUrl = process.env.REACT_APP_SERVER
 
@@ -63,7 +64,12 @@ export default class SearchSandwich extends React.Component {
 
   handleSave = () => {
     this.setState({ showModal: false, selectedLocation: null })
+  
+    this.props.onReloadData();
+  
   }
+
+
 
   render() {
     console.log(this.state);
@@ -79,16 +85,18 @@ export default class SearchSandwich extends React.Component {
           </Modal.Header>
           <Modal.Body>
               Where did you have your sandwich?
-            <form onSubmit={this.handleSearch}>
-              <input placeholder="City & State" name="location" />
-              <input placeholder="Restaurant Name" name="restaurant" />
+            <Form onSubmit={this.handleSearch}>
+              <Form.Group>
+              <Form.Control placeholder="City, State" name="location" />
+              <Form.Control placeholder="Restaurant Name (optional)" name="restaurant" />
               <Button variant="secondary" type="submit">SUBmit</Button>
-            </form>
+            </Form.Group>
+            </Form>
             {
               this.state.locations && (
                 <Container>
                   <Row>
-                    <h2>Search Results</h2>
+                    <h2>Search Results - Click on location</h2>
                     {this.state.locations.map((location, idx) => (
                       <Col key={idx}>
                         <SearchLocation location={location} setSelectedLocation={this.setSelectedLocation} />

@@ -17,7 +17,7 @@ export default class MapPage extends React.Component {
     this.fetchSandwiches();
   }
 
-  async fetchSandwiches() {
+  fetchSandwiches = async () => {
     let apiURL = `${SERVER}/getSandwiches`;
     console.log('xxxxxxxxxx', apiURL);
     try {
@@ -41,7 +41,7 @@ export default class MapPage extends React.Component {
   render() {
     return (
       <>
-        <SearchSandwich />
+        <SearchSandwich onReloadData={this.fetchSandwiches} />
         <Map sandwiches={this.state.sandwiches} />
       </>
     )
