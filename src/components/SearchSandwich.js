@@ -64,7 +64,12 @@ export default class SearchSandwich extends React.Component {
 
   handleSave = () => {
     this.setState({ showModal: false, selectedLocation: null })
+  
+    this.props.onReloadData();
+  
   }
+
+
 
   render() {
     console.log(this.state);

@@ -21,7 +21,7 @@ export default class SandwichMarker extends React.Component {
   render() {
     const { sandwich } = this.props
     return (
-      <><div onClick={this.showModal} style={{ fontSize: '50px' }}>🥪</div>
+      <><div onClick={this.showModal} style={{ fontSize: '50px', marginLeft: '-25px', marginTop: '-31px' }}>🥪</div>
         <div>
           <Modal
             size="sm"
