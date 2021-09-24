@@ -88,7 +88,7 @@ export default class SearchSandwich extends React.Component {
               this.state.locations && (
                 <Container>
                   <Row>
-                    <h2>Search Results</h2>
+                    <h2>Search Results - Click on location</h2>
                     {this.state.locations.map((location, idx) => (
                       <Col key={idx}>
                         <SearchLocation location={location} setSelectedLocation={this.setSelectedLocation} />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import './SearchLocation.css';
 
 export default class SearchLocation extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ export default class SearchLocation extends React.Component {
     return (
       <>
 
-        <Card clasName="card-location" onClick={this.showModalOnClick} style={{ width: '10rem' }}>
+        <Card className="card-location" onClick={this.showModalOnClick} style={{ width: '10rem' }}>
           <Card.Body>
             <Card.Title>{location.restaurant}</Card.Title>
             <Card.Text>{location.addressLines.join(', ')}</Card.Text>
