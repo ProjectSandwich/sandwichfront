@@ -23,11 +23,10 @@ export default class SearchLocation extends React.Component {
 
     return (
       <>
-
         <Card onClick={this.showModalOnClick} style={{ width: '10rem' }}>
           <Card.Body>
             <Card.Title>{location.restaurant}</Card.Title>
-            <Card.Text>{location.addressLines.join(', ')}</Card.Text>
+            <Card.Text>{location.addressLines && location.addressLines.join(', ')}</Card.Text>
           </Card.Body>
         </Card>
       </>
