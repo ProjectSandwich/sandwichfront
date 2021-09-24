@@ -27,7 +27,7 @@ export default class SearchLocation extends React.Component {
         <Card onClick={this.showModalOnClick} style={{ width: '10rem' }}>
           <Card.Body>
             <Card.Title>{location.restaurant}</Card.Title>
-            <Card.Text><a href={location.yelpUrl}>Link</a></Card.Text>
+            <Card.Text>{location.addressLines.join(', ')}</Card.Text>
           </Card.Body>
         </Card>
       </>
